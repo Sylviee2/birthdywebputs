@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <style>
+    #text{
+        color: rgb(87, 110, 98);
+        font-size: 40px;
+        text-align: center;
+        margin-top: 100px;
+        text-transform: uppercase;
+        font-family: "Arial Black";
+        font-weight: 700;
+}
+
+    
+.animasi-teks {
+  font-size: 19px;
+  width: 100%;
+  text-align: center;
+
+  white-space:nowrap;
+  overflow:hidden;
+  -webkit-animation: typing 5s steps(70, end);
+  animation: animasi-ketik 5s steps(70, end);
+}
+@keyframes animasi-ketik{
+  from { width: 0; }
+}
+@-webkit-keyframes animasi-ketik{
+  from { width: 0; }
+}
+
+
+    </style>
+
+</head>
+<body>
+    
+    
+    
+    <img src="https://i.pinimg.com/564x/68/5d/00/685d004f014196b6448e268c1fb1baec.jpg" width="200px" style="margin-top: 20px; margin-left: 70px;" >
+    <img src="https://i.pinimg.com/736x/c3/bd/1b/c3bd1b403806586a0cbb1ee22171c862.jpg" width="70px">
+    <img src="https://i.pinimg.com/564x/46/bc/21/46bc2105b7c301de7c4a7454f1d4766b.jpg" width="70px">
+    <img src="https://i.pinimg.com/564x/38/62/1d/38621dc217118ad19091ea0bded739f8.jpg" width="50px">
+    <img src="https://i.pinimg.com/564x/89/ad/68/89ad68bfd27306ebe1b9adcd33575d24.jpg" width="40px" style="margin-left: 30px; ">
+    <img src="https://i.pinimg.com/736x/4e/09/a5/4e09a5391464d66cff6e232029fd2be6.jpg" width="130px">
+    <img src="https://i.pinimg.com/564x/06/b3/87/06b387d379de6fa6109869b770ccd5df.jpg" width="70px">
+    <img src="https://i.pinimg.com/564x/8a/2e/05/8a2e059e2ac7c92e0de020824ca661e2.jpg" width="90px">
+    <img src="https://i.pinimg.com/564x/ca/e7/c3/cae7c3236a6c8cd3a41b72e8a4f73700.jpg" width="50px">
+    <img src="https://i.pinimg.com/564x/62/b8/3e/62b83ed46e80e7afaaa1d195778a7584.jpg" width="40px">
+    <img src="https://i.pinimg.com/564x/86/9c/c9/869cc9460059848e2129fbf6615dd1f6.jpg" width="70px">
+    <img src="https://i.pinimg.com/564x/04/f5/f1/04f5f15e26d895a41f1f9bcd303d5d9d.jpg" width="50px">
+    <img src="https://i.pinimg.com/564x/bf/c8/5c/bfc85c742bc9a8d8141914844af4219a.jpg" width="80px">
+    <img src="https://i.pinimg.com/564x/c5/6f/89/c56f89b3d4bc3cd7eb13b6249036bd36.jpg" width="70px">
+    <img src="https://i.pinimg.com/564x/68/5d/00/685d004f014196b6448e268c1fb1baec.jpg" width="200px" style="margin-top: 20px;" >
+
+
+    <center>
+    <img src="p5.jpg" width="200px" style="margin-right: 60px; margin-top: 40px;">
+    <img src="p6.jpg" width="200px" style="margin-right: 60px; margin-top: 40px;">
+    <img src="p3.jpg" width="200px" style="margin-top: 40px;">
+    </center>
+
+    
+    <center>
+        <img style="margin-top: 50px;" src="https://i.pinimg.com/564x/a0/ac/95/a0ac95272df31e6c38060db0a61a2680.jpg" width="90px" >
+        <button style="margin-top: 75px" type="button" class="btn btn-dark"><a style="text-decoration: none; color: white;" href="card.html">Learn more</a> </button>
+        <img style="margin-top: 50px; " src="https://i.pinimg.com/564x/a0/ac/95/a0ac95272df31e6c38060db0a61a2680.jpg" width="90px" >
+
+    
+    </center>
+
+
+    <div id="text">
+
+    </div>
+    
+
+<script>
+  var i=0,text;
+  text = "TO PUTRA YG NYEBELIN"
+
+  function ketik() {
+    if(i<text.length){
+      document.getElementById("text").innerHTML += text.charAt(i);
+      i++;
+      setTimeout(ketik,290);
+    }
+  }
+  ketik();
+</script>
+
+
+<center>
+<div class="animasi-teks">Today is a special day that I look forward to once a year. I hope this day is full of happiness, love and beautiful memories. Happy 16th Birthday!</div>
+</center>
+
+<hr>
+<center style="margin-bottom: 30px;">© CopyRight Nabilaasyif</center>
+
+   
+    
+
+
+    </div>
+</body>
+</html>
